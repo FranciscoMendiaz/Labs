@@ -2,7 +2,7 @@
 
 /* --------------- Ejercicio 1 estructuras de decisión con IF ----------
 
-string inputTexto="negros";
+string inputTexto="a";
 do
 {
     Console.Write("Texto: ");
@@ -39,9 +39,10 @@ else if (opcion.Key == ConsoleKey.D3)
 }
 --------------------------------------------------------------------- */
 
-//  Ejercicio 1 estructuras de decisión con CASE 
+//  Ejercicio 2 estructuras de decisión con CASE 
 
 
+/*
 string inputTexto="negros";
 do
 {
@@ -80,5 +81,37 @@ switch (opcion.Key)
     break;
 }
 
+*/
 
 
+Console.WriteLine("Ingrese un numero de filas");
+int filas = Int32.Parse(Console.ReadLine());
+Console.WriteLine();
+int cantEstrellitas = 1, totalEstrellitas = 1 + 2 * (filas - 1);
+for (int i = 1; i <= filas; i++)
+{
+    blanco(totalEstrellitas, cantEstrellitas);
+    estrellita(cantEstrellitas);
+    blanco(totalEstrellitas, cantEstrellitas);
+    cantEstrellitas += 2;
+    Console.WriteLine();
+}
+       
+
+        static void estrellita(int cantEstrellitas)
+{
+    for (int j = 1; j <= cantEstrellitas; j++)
+    {
+        Console.Write("*");
+    }
+}
+
+static void blanco(int totalEstrellitas, int cantEstrellitas)
+{
+    int diferenciaEstrellitas = totalEstrellitas - cantEstrellitas;
+    for (int j = 1; j <= (diferenciaEstrellitas / 2); j++)
+    {
+        Console.Write(" ");
+    }
+
+}
