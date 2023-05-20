@@ -43,7 +43,7 @@ else if (opcion.Key == ConsoleKey.D3)
 
 
 /*
-string inputTexto="negros";
+string inputTexto="s";
 do
 {
     Console.Write("Texto: ");
@@ -84,6 +84,51 @@ switch (opcion.Key)
 */
 
 
+
+/* EJERCICIO 3
+
+int cantIteraciones = 5;
+string[] arreglo = new string[cantIteraciones];
+
+
+for (int i =0; i < cantIteraciones; i++)
+{
+    Console.Write("Ingrese la posición {0} del arreglo: ", i);
+    arreglo[i] = Console.ReadLine();
+    Console.WriteLine ("");
+}
+
+Console.Clear ();
+
+for (int i = 0; i < cantIteraciones; i++)
+{
+    Console.Write("Posición {0} del arreglo: ", i);
+    Console.WriteLine(arreglo[i]);
+    Console.WriteLine("");
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Ejercicio 4(9)
+
 Console.WriteLine("Ingrese un numero de filas");
 int filas = Int32.Parse(Console.ReadLine());
 Console.WriteLine();
@@ -115,3 +160,4 @@ static void blanco(int totalEstrellitas, int cantEstrellitas)
     }
 
 }
+
